@@ -92,7 +92,7 @@ void loop()
       xyz_value += String(acclr[axis]) + " ";
       prev[axis] = acclr[axis];
     }
-    //Serial.println(/*"axis: " + */xyz_value + String(proc_time));
+    Serial.println("axis: " + xyz_value);
     
     run_time = micros() / TIMEING_VALUE;
     //Serial.println(String(run_time) +", "+ hold_time);
